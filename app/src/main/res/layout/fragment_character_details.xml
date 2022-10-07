@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.CharacterDetailsFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_characterDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_characterDetails"
+        tools:src="@tools:sample/avatars"
+        />
+
+    <TextView
+        android:id="@+id/text_CharacterDetails_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Alejandro Azurdia"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        />
+
+    <TextView
+        android:id="@+id/CharacterDetails_specie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specie: "
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_CharacterDetails_name" />
+
+    <TextView
+        android:id="@+id/text_CharacterDetails_specie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/CharacterDetails_specie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CharacterDetails_specie"
+        />
+
+    <TextView
+        android:id="@+id/CharacterDetails_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Status: "
+        app:layout_constraintStart_toStartOf="@+id/CharacterDetails_specie"
+        app:layout_constraintTop_toBottomOf="@+id/CharacterDetails_specie"
+        />
+
+    <TextView
+        android:id="@+id/text_CharacterDetails_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alive?"
+        app:layout_constraintEnd_toEndOf="@+id/text_CharacterDetails_specie"
+        app:layout_constraintTop_toBottomOf="@+id/text_CharacterDetails_specie"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/CharacterDetails_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender: "
+        app:layout_constraintTop_toBottomOf="@id/CharacterDetails_status"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/CharacterDetails_status"
+
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="362dp"
+        />
+
+    <TextView
+        android:id="@+id/text_CharacterDetails_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        app:layout_constraintTop_toBottomOf="@id/text_CharacterDetails_status"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/text_CharacterDetails_specie"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="357dp"
+        />
+
+    <TextView
+        android:id="@+id/CharacterDetails_Origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Origin: "
+        app:layout_constraintTop_toBottomOf="@id/CharacterDetails_gender"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/CharacterDetails_gender"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="390dp"
+        />
+
+    <TextView
+        android:id="@+id/text_characterDetails_Origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Guatemala"
+        app:layout_constraintEnd_toEndOf="@+id/text_CharacterDetails_gender"
+        app:layout_constraintTop_toBottomOf="@+id/text_CharacterDetails_gender"
+        />
+
+    <TextView
+        android:id="@+id/CharacterDetails_Episodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Episodes: "
+        app:layout_constraintStart_toStartOf="@+id/CharacterDetails_Origin"
+        app:layout_constraintTop_toBottomOf="@+id/CharacterDetails_Origin"
+        />
+
+    <TextView
+        android:id="@+id/text_CharacterDetails_Episodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="10 maybe?"
+        app:layout_constraintEnd_toEndOf="@+id/text_characterDetails_Origin"
+        app:layout_constraintTop_toBottomOf="@+id/text_characterDetails_Origin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
