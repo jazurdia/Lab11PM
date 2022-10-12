@@ -12,10 +12,11 @@ import androidx.navigation.ui.setupWithNavController
 import coil.load
 import coil.request.CachePolicy
 import coil.transform.CircleCropTransformation
+
+
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-
 import com.example.lab11pm.R
 import com.example.lab11pm.datasource.api.RetrofitInstance
 import com.example.lab11pm.datasource.model.Character
@@ -73,6 +74,8 @@ class CharacterDetailsFragment : Fragment(R.layout.fragment_character_details) {
             }
         })
     }
+
+
 
     private fun setData(character: Character) {
         character.apply {
